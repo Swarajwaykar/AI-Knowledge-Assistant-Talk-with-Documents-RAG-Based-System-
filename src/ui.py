@@ -1,7 +1,8 @@
+import os
+os.environ["TRANSFORMERS_NO_TORCHVISION"] = "1"
 import streamlit as st
 import time
 import tempfile
-import os
 from vectorstore import FaissVectorStore
 from search import RAGSearch
 from langchain_community.document_loaders import PyMuPDFLoader

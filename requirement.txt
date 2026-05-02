@@ -8,5 +8,3 @@ faiss-cpu
 chromadb
 langchain-groq
 python-dotenv
-torch
-torchvision
