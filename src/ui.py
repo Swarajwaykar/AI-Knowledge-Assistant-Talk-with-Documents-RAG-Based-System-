@@ -2,12 +2,11 @@ import streamlit as st
 import time
 import tempfile
 import os
-from src.vectorstore import FaissVectorStore
-from src.search import RAGSearch
+from vectorstore import FaissVectorStore
+from search import RAGSearch
 from langchain_community.document_loaders import PyMuPDFLoader
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # Page config (with branding)
 st.set_page_config(page_title="AI Knowledge Assistant", page_icon="⚡", layout="wide")
